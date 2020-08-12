@@ -14,11 +14,13 @@
 		6257DDD324E35BBA0074F7BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6257DDD124E35BBA0074F7BC /* Main.storyboard */; };
 		6257DDD524E35BBB0074F7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6257DDD424E35BBB0074F7BC /* Assets.xcassets */; };
 		6257DDD824E35BBB0074F7BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6257DDD624E35BBB0074F7BC /* LaunchScreen.storyboard */; };
-		6257DDE224E3651D0074F7BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257DDE124E3651D0074F7BC /* Constants.swift */; };
 		6257DDE424E368010074F7BC /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257DDE324E368010074F7BC /* Video.swift */; };
 		6257DDE624E3686A0074F7BC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257DDE524E3686A0074F7BC /* Model.swift */; };
 		6257DDE824E3CCF10074F7BC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257DDE724E3CCF10074F7BC /* Response.swift */; };
 		62F65C3B24E3FB82003B580B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F65C3A24E3FB82003B580B /* CacheManager.swift */; };
+		62F65C3E24E40548003B580B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6257DDE124E3651D0074F7BC /* Constants.swift */; };
+		62F65C4024E40700003B580B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F65C3C24E3FF84003B580B /* DetailViewController.swift */; };
+		62F65C4324E4092F003B580B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F65C4224E4092F003B580B /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		6257DDE524E3686A0074F7BC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6257DDE724E3CCF10074F7BC /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		62F65C3A24E3FB82003B580B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		62F65C3C24E3FF84003B580B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		62F65C4224E4092F003B580B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F65C4324E4092F003B580B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				6257DDCF24E35BBA0074F7BC /* ViewController.swift */,
+				62F65C3C24E3FF84003B580B /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -100,6 +106,7 @@
 				6257DDCD24E35BBA0074F7BC /* SceneDelegate.swift */,
 				6257DDCA24E35BBA0074F7BC /* YoutubeVideo */,
 				6257DDC924E35BBA0074F7BC /* Products */,
+				62F65C4124E4092E003B580B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +130,14 @@
 				6257DDD924E35BBB0074F7BC /* Info.plist */,
 			);
 			path = YoutubeVideo;
+			sourceTree = "<group>";
+		};
+		62F65C4124E4092E003B580B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62F65C4224E4092F003B580B /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +216,10 @@
 				6257DDCC24E35BBA0074F7BC /* AppDelegate.swift in Sources */,
 				6257DDE824E3CCF10074F7BC /* Response.swift in Sources */,
 				6257DDCE24E35BBA0074F7BC /* SceneDelegate.swift in Sources */,
+				62F65C3E24E40548003B580B /* Constants.swift in Sources */,
 				6257DDE624E3686A0074F7BC /* Model.swift in Sources */,
+				62F65C4024E40700003B580B /* DetailViewController.swift in Sources */,
 				62013EBA24E3F07D0048A91A /* VideoTableViewCell.swift in Sources */,
-				6257DDE224E3651D0074F7BC /* Constants.swift in Sources */,
 				6257DDE424E368010074F7BC /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
