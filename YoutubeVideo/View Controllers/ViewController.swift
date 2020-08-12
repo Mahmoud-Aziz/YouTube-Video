@@ -56,12 +56,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEO_ID , for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEO_ID , for: indexPath) as! VideoTableViewCell
         
         //get the title for the video
-        let title = self.videos[indexPath.row].title
+        let video = self.videos[indexPath.row]
         
-        cell.textLabel?.text = title
+        
+        cell.setCell(video)
         
         //return the cell
         return cell
